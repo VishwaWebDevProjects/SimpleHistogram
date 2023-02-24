@@ -1,0 +1,271 @@
+<!-- Author: Vishwa Venkateshwaran -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type=text/javascript src="calculate.js" defer></script>
+        <title>Histogram Generator</title>
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="histogram.css">        
+    </head>
+    
+</head>
+<body onload="init()" class="p-3 mb-2 bg-dark text-white">
+    <h1>Histogram Generator</h1>
+
+  <section class="container">
+
+      <section id="fileUpload">
+        <form class="custom-file-upload"> 
+          <input type="file" name="file" id="fileInput" />
+        </form>
+      </section>
+
+      <section id="histoCreator">
+        <table id="tableOne" class="table table-dark table-hover ">
+            <tr>
+              <th colspan="2">Lower Bounds</th>
+              <th colspan="2">Histogram</th>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName">Max</label>
+              </td>
+
+              <td>
+                <input type="text" id="Max" name="0" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                Number of students:
+                <td id="totalNumOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName1">A+</label></td>
+              </td>
+
+              <td>
+                <input type="text" id="A+" name="1" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter1" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <label class="boundName2">A</label>
+              </td>
+
+              <td>
+              <input type="text" id="A" name="2" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter2" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <label class="boundName3">A-</label>
+              </td>
+
+              <td>
+              <input type="text" id="A-" name="3" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter3" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+          <tr>
+              <td>
+              <label class="boundName4">B+</label>
+              </td>
+
+              <td>
+              <input type="text" id="B+" name="4" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter4" min="0" max="" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName5">B</label>
+              </td>
+
+              <td>
+                <input type="text" id="B" name="5" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="0" min="0" max="0" value="0meter1" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName6">B-</label>
+              </td>
+
+              <td>
+                <input type="text" id="B-" name="6" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="0" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName7">C+</label>
+              </td>
+
+              <td>
+                <input type="text" id="C+" name="7" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter1" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName8">C</label>
+              </td>
+
+              <td>
+                <input type="text" id="C" name="8" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter1" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName9">C-</label>
+              </td>
+
+              <td>
+                <input type="text" id="C-" name="9" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter1" min="0" max="0" value="0" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName10">D</label>
+              </td>
+
+              <td>
+                <input type="text" id="D" name="10" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="" min="" max="" value="" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label class="boundName11">F</label>
+              </td>
+
+              <td>
+                <input type="text" id="F" name="11" class="inputGradeRelated"><br><br>
+              </td>
+
+              <td>
+                <meter id="meter1" min="" max="" value="" class="metVal"></meter>
+                <td class="numOfStudents">0</td>
+              </td>
+            </tr>
+          </table>
+      </section>
+
+      <section id="statsAndErrors">
+          <table id="tableTwo" class="table table-striped table-dark table-bordered table-hover table-responsive">
+            <tr>
+              <th colspan="2">Stats</th>
+              <th>Error messages</th>
+            </tr>
+
+            <tr>
+              <td>
+                <label>Highest</label></td>
+              </td>
+
+              <td>
+                <p id="high" class="statClass"></p>
+              </td>
+              
+              <td rowspan="4">
+                <p id="errorMessage">No errors...</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>Lowest</label>
+              </td>
+
+              <td>
+                <p id="low" class="statClass"></p>
+              </td>
+            </tr>
+    
+            <tr>
+              <td>
+                <label>Mean</label>
+              </td>
+
+              <td>
+                  <p id="mean" class="statClass"></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label>Median</label>
+              </td>
+
+              <td>
+                  <p id="median" class="statClass"></p>
+              </td>
+            </tr>
+          </table>
+      </section>
+  </section>
+</body>
+</html>

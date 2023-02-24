@@ -1,0 +1,90 @@
+
+h1{
+    color: white;
+    text-align: center;
+    size: 50px;
+    font-size: 33px;
+}
+
+body{
+    background-color: rgb(36, 32, 32);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#statsAndErrors table {
+  width: 100%;
+}
+
+#histoCreator {
+    width: 100%;
+} 
+
+#statsAndErrors {
+  width: 100%;
+}
+
+#tableOne {
+  border-spacing: 0;
+  padding: 0;
+}
+
+#tableTwo {
+  border-spacing: 0;
+  border-color: white;
+}
+
+.inputGradeRelated {
+  margin-top: 20px;
+}
+
+th {
+  width: 500px;
+  text-align: center;
+  font-size: 1.05em;
+  vertical-align: middle;
+}
+
+td {
+  width: 500px;
+  text-align:center;
+  vertical-align: middle;
+  padding: 0;
+}
+
+#errorMessage {
+  color: red;
+}
+
+#fileUpload {
+  background-color: #a1dcec;
+  text-align: center;
+  padding: 50px;
+  margin: 7px 0px;
+}
+
+section > form > input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 245px;
+  transition: 0.6s ease-in-out;
+  color:rgb(0, 0, 0);
+  font-size: 1.10em;
+}
+
+section > form > input:hover {
+  cursor: pointer;
+  background-color: black;
+  color:white;
+}
+
+meter {
+  width: 20em;
+  height: 1.75em;
+}
+
+#fileContent {
+  display: none;
+}
+
+#errorMessage {
+  font-size: 1.3em;
+}
